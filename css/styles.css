@@ -1,5 +1,11 @@
+.container {
+    margin-left: auto;
+    margin-right: auto;
+    width: 1024px;
+}
+
 header {
-    background-color: cadetblue;
+    background-color: #34393d;
     height: 60px;
 }
 
@@ -21,8 +27,16 @@ footer {
     height: 350px;
 }
 
-.container {
-    margin-left: auto;
-    margin-right: auto;
-    width: 1024px;
+.fa-bars {
+    color:white;
+    font-size: 44px;
+    position: relative;
+    left: 960px;
+    top: -42px;
+}
+
+@media (min-width: 640px) {
+    .fa-bars {
+        visibility: hidden;
+    }
 }
