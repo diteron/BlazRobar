@@ -1,6 +1,9 @@
 * {
     margin: 0;
     padding: 0;
+    -webkit-box-sizing: border-box;
+    -moz-box-sizing: border-box;
+    box-sizing: border-box;
 }
 
 .container {
@@ -64,7 +67,7 @@ header {
 .column {
     float: right;
     width: 80%;
-    height: 230px;
+    height: 250px;
     padding: 10px;
     background-color: rgb(52, 57, 61);
 }
@@ -124,15 +127,14 @@ header {
 }
 
 main {
-    background-color: rgb(10, 153, 176);
     margin-left: auto;
     margin-right: auto;
     max-width: 1216px;
 }
 
 .big-link {
-    width: 75%;
-    padding: 18% 8%;
+    background: linear-gradient(to right, rgb(21, 176, 195), rgb(8,144,168));
+    padding: 16% 10%;
 }
 
 .big-link-head a {
@@ -140,15 +142,6 @@ main {
     font-weight: 600;
     font-family: 'Open Sans';
     color: white;
-    text-decoration: none;
-}
-
-.big-link-head p {
-    font-family: 'Open Sans';
-    padding-top: 4%;
-    font-weight: 600;
-    font-size: 3vw;
-    color: rgb(169, 212, 222);
     text-decoration: none;
 }
 
@@ -161,7 +154,7 @@ main {
 .link-arrow {
     display: block;
     margin-top: 5%;
-    width: 95%;
+    width: 88.5%;
     height: 30px;
 }
 
@@ -174,10 +167,51 @@ main {
     text-decoration: none;
 }
 
-.icon {
+.arrow-icon {
     float: right;
     font-size: 3vw;
     color: white;
+}
+
+.rhood div {
+    overflow: hidden;
+    height: 20vw;
+    position: relative;
+}
+
+.rhood-text {
+    float: left;
+    padding-left: 10.5%;
+    background-color: rgb(39,33,44);
+    width: 80%;
+}
+
+.rhood-text span {
+    font-size: 3vw;
+    color: rgb(146,130,160);
+    font-family: 'Open Sans';
+    font-weight: 600;
+    margin: 0;
+    position: absolute;
+    top: 50%;
+    transform: translate(0, -50%);
+}
+
+.rhood-arrow {
+    float: left;
+    background-color: rgb(188,49,131);
+    width: 20%;
+}
+
+.rhood-arrow i {
+    font-size: 4.5vw;
+    color: white;
+    margin: 0;
+    position: absolute;
+    text-decoration: none;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
 }
 
 footer {
@@ -185,7 +219,7 @@ footer {
     margin-left: auto;
     margin-right: auto;
     max-width: 1216px;
-    height: 350px;
+    height: 500px;
 }
 
 @media (min-width: 980px) {
@@ -200,17 +234,32 @@ footer {
     .nav-pc {
         display: block;
     }
+}
 
+@media (min-width: 1216px) {
     .big-link-head a {
-        font-size: 64px;
-    }
-
-    .link-arrow .text, .icon{
-        font-size: 30px;
+        font-size: 79px;
     }
 
     .link-arrow {
-        width: 697.5px;
+        width: 862px;
+    }
+
+    .big-link-head {
+        width: 875px;
+    }
+
+    .rhood div {
+        height: 243px;
+    }
+    .link-arrow .text, 
+    .arrow-icon, 
+    .rhood-text span {
+        font-size: 37px;
+    }
+
+    .rhood-arrow i {
+        font-size: 55px;
     }
 }
 
