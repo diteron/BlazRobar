@@ -17,15 +17,16 @@ header {
 }
 
 .nav-head {
-    height: 66px;
+    height: 48px;
     float: left;
     position: relative;
-    padding-left: 15px;
+    padding-left: 5vw;
 }
 
 .nav-head p {
-    font-size: 17px;
+    font-size: 14px;
     font-family: 'Open Sans';
+    font-weight: 600;
     color: rgb(235, 235, 235);
     margin: 0;
     position: absolute;
@@ -39,10 +40,10 @@ header {
     border: none !important;
 }
 
-.fa-solid, .fa-bars {
+.fa-bars {
     color: rgb(235, 235, 235);
-    font-size: 26px;
-    padding: 20px;
+    font-size: 22px;
+    padding: 13px;
 }
 
 .nav-mobi {
@@ -96,19 +97,24 @@ header {
     display: block; 
 }
 
-
 .nav-pc {
-    float: left;
+    height: 66px;
     margin-left: 2em;
+    position: relative;
 }
 
-.nav-pc a {
-    float: left;
-    font-size: 14px;
+.nav-pc .links {
+    margin: 0;
+    position: absolute;
+    top: 50%;
+    transform: translate(0, -50%);
+}
+
+.links a {
+    font-size: 16px;
     font-family: 'Open Sans';
-    margin: 6px;
+    font-weight: 600;
     color: rgb(235, 235, 235);
-    text-align: center;
     padding: 14px 16px;
     text-decoration: none;
 }
@@ -122,7 +128,56 @@ main {
     margin-left: auto;
     margin-right: auto;
     max-width: 1216px;
-    height: 700px;
+}
+
+.big-link {
+    width: 75%;
+    padding: 18% 8%;
+}
+
+.big-link-head a {
+    font-size: 6.5vw;
+    font-weight: 600;
+    font-family: 'Open Sans';
+    color: white;
+    text-decoration: none;
+}
+
+.big-link-head p {
+    font-family: 'Open Sans';
+    padding-top: 4%;
+    font-weight: 600;
+    font-size: 3vw;
+    color: rgb(169, 212, 222);
+    text-decoration: none;
+}
+
+.big-link .link {
+    display: inline-block;
+    margin-top: 0;
+    position: relative;
+}
+
+.link-arrow {
+    display: block;
+    margin-top: 5%;
+    width: 95%;
+    height: 30px;
+}
+
+.link-arrow .text {
+    float: left;
+    font-family: 'Open Sans';
+    font-weight: 600;
+    font-size: 3vw;
+    color: rgb(169, 212, 222);
+    text-decoration: none;
+}
+
+.icon {
+    float: right;
+    font-size: 3vw;
+    color: white;
 }
 
 footer {
@@ -144,6 +199,18 @@ footer {
 
     .nav-pc {
         display: block;
+    }
+
+    .big-link-head a {
+        font-size: 64px;
+    }
+
+    .link-arrow .text, .icon{
+        font-size: 30px;
+    }
+
+    .link-arrow {
+        width: 697.5px;
     }
 }
 
