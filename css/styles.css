@@ -9,9 +9,7 @@
 .container {
     margin-left: auto;
     margin-right: auto;
-    position: absolute;
     width: 100%;
-    left: 0;
 }
 
 header {
@@ -137,11 +135,8 @@ main {
     padding: 16% 10%;
 }
 
-a {
-    display: block;
-}
-
 .big-link-head a {
+    display: block;
     font-size: 6.5vw;
     font-weight: 600;
     font-family: 'Open Sans';
@@ -157,9 +152,9 @@ a {
 
 .link-arrow {
     display: block;
-    margin-top: 5%;
+    padding-top: 5%;
     width: 88.5%;
-    height: 30px;
+    height: 9vw;
 }
 
 .link-arrow .text {
@@ -175,6 +170,10 @@ a {
     float: right;
     font-size: 3vw;
     color: white;
+}
+
+.rhood {
+    height: 20vw;
 }
 
 .rhood div {
@@ -220,6 +219,7 @@ a {
 
 .photos {
     width: 100%;
+    height: 28.7vw;
 }
 
 .photos div {
@@ -250,12 +250,43 @@ img {
     transform: translate(-50%, -50%);
 }
 
-footer {
-    background-color: rgb(235, 235, 235);
-    margin-left: auto;
-    margin-right: auto;
-    max-width: 1216px;
-    height: 500px;
+.text-l {
+    background-color: rgb(235,235,235);
+    padding: 8%;
+    padding-top: 5%;
+    padding-bottom: 15%;
+    overflow: hidden;
+}
+
+.txt-hd h1 {
+    color: rgb(8,140,165);
+    font-size: 2.6vw;
+    font-weight: 600;
+    font-family: 'Open Sans';
+    text-decoration: none;
+}
+
+.txt-hd a {
+    text-decoration: none;
+}
+
+.txt-column1, .txt-column2 {
+    float: left;
+    width: 50%;
+    padding-top: 2%;
+    font-size: 1.3vw;
+    font-family: 'Open Sans';
+    font-weight: 600;
+    line-height: 170%;
+    color: rgb(81,81,81)
+}
+
+.txt-column1 {
+    padding-right: 5%;
+}
+
+.txt-column2 {
+    padding-left: 5%;
 }
 
 @media (min-width: 980px) {
@@ -278,29 +309,40 @@ footer {
     }
 
     .link-arrow {
-        width: 862px;
+        width: 861px;
+        height: 109px;
     }
 
     .big-link-head {
-        width: 875px;
+        width: 874px;
     }
 
-    .rhood div {
-        height: 243px;
+    .rhood, .rhood div {
+        height: 242px;
     }
 
     .link-arrow .text, 
     .arrow-icon, 
     .rhood-text span {
-        font-size: 37px;
+        font-size: 36px;
     }
 
     .rhood-arrow i, .photos-arrow i {
-        font-size: 55px;
+        font-size: 54px;
     }
 
-    img, .photos .photos-arrow {
+    img,
+    .photos,
+    .photos .photos-arrow {
         height: 348.7px;    
+    }
+
+    .txt-hd h1 {
+        font-size: 32px;
+    }
+
+    .txt-column1, .txt-column2 {
+        font-size: 16px;
     }
 }
 
@@ -315,12 +357,29 @@ footer {
 }
 
 @media (max-width: 640px) {
-    img, .photos .photos-arrow {
+    img,
+    .photos .photos-arrow {
         width: 100%; 
         height: 86.1vw;   
     }
 
+    .photos {
+        width: 100%; 
+        height: 258.3vw;   
+    }
+
     .photos-arrow i {
         font-size: 9.5vw;
+    }
+
+    .text-l h1 {
+        font-size: 5.4vw;
+        padding-left: 2%;
+    }
+
+    .txt-column1, .txt-column2 {
+        width: 100%;
+        font-size: 4.2vw;
+        padding: 2% 2%;
     }
 }
