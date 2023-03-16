@@ -254,15 +254,12 @@ main {
     overflow: hidden;
 }
 
-.txt-hd h1 {
+.head-url a {
+    text-decoration: none;
     color: rgb(8,140,165);
     font-size: 2.6vw;
     font-weight: 600;
     font-family: 'Open Sans';
-}
-
-.txt-hd a {
-    text-decoration: none;
 }
 
 .txt-column1, .txt-column2 {
