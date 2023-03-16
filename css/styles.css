@@ -328,7 +328,7 @@ main {
         height: 348.7px;    
     }
 
-    .txt-hd h1 {
+    .head-url a {
         font-size: 32px;
     }
 
@@ -363,7 +363,7 @@ main {
         font-size: 9.5vw;
     }
 
-    .text-l h1 {
+    .head-url a {
         font-size: 5.4vw;
         padding-left: 2%;
     }
