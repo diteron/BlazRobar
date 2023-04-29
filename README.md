@@ -1,1 +1,1 @@
-This is simple responsive web page without using javascript.
+Simple responsive web page.
